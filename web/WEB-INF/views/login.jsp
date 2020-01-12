@@ -15,6 +15,7 @@
 </head>
 <body>
 <form class="form-group" action="${pageContext.request.contextPath}/login">
+    <input type="hidden" name="redirectUrl" value="${redirectUrl}">
     <h3 class="h3">统一登录中心</h3>
     <input type="text" class="form-control" placeholder="Username" name="username" required="true">
     <input type="password" class="form-control" placeholder="Password" name="password" required="">
